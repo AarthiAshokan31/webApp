@@ -3,8 +3,8 @@ import mysql.connector
 import psycopg2
 import datetime
 
-app = Flask(__name__)
-
+application = Flask(__name__)
+app = application
 @app.route("/", methods=['GET', 'POST'])
 def home_page():
     if (request.method == 'POST'):
